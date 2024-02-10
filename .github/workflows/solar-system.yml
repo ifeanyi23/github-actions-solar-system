@@ -40,7 +40,6 @@ jobs:
           with:
             name: Mocha-Test-Result
             path: test-results.xml
-<<<<<<< Updated upstream
 
     code-coverage:
           name: Code Coverage
@@ -67,5 +66,3 @@ jobs:
                 name: Code-Coverage-Result
                 path: coverage
                 retention-days: 5
-=======
->>>>>>> Stashed changes
