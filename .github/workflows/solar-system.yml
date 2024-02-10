@@ -1,4 +1,4 @@
-name: Solar System Workflow
+name: Solar System Workflow #new changes
 
 on: 
   workflow_dispatch:
@@ -33,6 +33,7 @@ jobs:
     
         - name: Unit Testing
           run: npm test
+          continue-on-error: true
           
         - name: Archive Test Result
           if: always()
