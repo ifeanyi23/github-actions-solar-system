@@ -22,6 +22,11 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: 20
+        - name: Cache NPM dependencies
+          uses: actions/cache@v3
+          with:
+            key: ${{runner.os}}-node-${{hashFiles('package-lock.json')}}
+            path: ~/.npm
     
         - name: Install Dependencies
           run: npm install
@@ -35,6 +40,7 @@ jobs:
           with:
             name: Mocha-Test-Result
             path: test-results.xml
+<<<<<<< Updated upstream
 
     code-coverage:
           name: Code Coverage
@@ -61,3 +67,5 @@ jobs:
                 name: Code-Coverage-Result
                 path: coverage
                 retention-days: 5
+=======
+>>>>>>> Stashed changes
