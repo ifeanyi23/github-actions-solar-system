@@ -1,4 +1,4 @@
-name: Solar System Workflow #new changes
+name: Solar System Workflow #new changes to file
 
 on: 
   workflow_dispatch:
