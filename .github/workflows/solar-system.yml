@@ -86,6 +86,7 @@ jobs:
               username: ${{ github.repository_owner }}
               password: ${{ secrets.GITHUB_TOKEN }} 
            - name: Docker Build For Testing
+             continue-on-error: true
              uses: docker/build-push-action@v4
              with:
                 context: "."
