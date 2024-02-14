@@ -153,7 +153,7 @@ jobs:
     integration-testing:
        name: Integration Testing
        needs: dev-deploy
-       uses: ifeanyi23/github-actions-solar-system/.github/workflows/reusable-workflow.yml@refs/heads/feature/workflow
+       uses: ./.github/workflows/reusable-workflow.yml
        with:
          ingress-url: ${{ needs.dev-deploy.outputs.APP_INGRESS_URL }}
 
